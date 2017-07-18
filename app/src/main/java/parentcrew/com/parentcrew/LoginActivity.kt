@@ -58,7 +58,6 @@ class LoginActivity : AppCompatActivity() {
             val username = usernameEditText.text.toString()
             val password = passwordEditText.text.toString()
             setAuthentication(username, password)
-            //TODO: GET CURRENT USER UID FROM FIREBASE
             val user = authentication.currentUser
 
             //Log.d(TAG,user!!.uid)
@@ -87,7 +86,6 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun updateUI() {
-        //TODO: IF PROFILE IS REGISTERED GO TO MAINACTIVITY ELSE GO TO REGISTERPROVILE ACTIVITY
         val user = authentication.currentUser
         if (user!!.displayName != null) {
             val intent = Intent(this@LoginActivity, MainActivity::class.java)

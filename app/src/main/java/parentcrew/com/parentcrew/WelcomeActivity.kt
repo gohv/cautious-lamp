@@ -117,6 +117,7 @@ class WelcomeActivity : AppCompatActivity() {
 
         })
     }
+
     override fun onStart() {
         super.onStart()
         val default = UserUtility.getUID(this) ?: "no display name - debug"
@@ -126,5 +127,12 @@ class WelcomeActivity : AppCompatActivity() {
         } else {
             Log.d(TAG, default)
         }
+    }
+
+    private fun queryDatabase() {
+        val database: FirebaseDatabase = FirebaseDatabase.getInstance();
+        val myRef: DatabaseReference = database.reference;
+        val uid = authentication.currentUser!!.uid
+        //TODO: FIX THIS
     }
 }
