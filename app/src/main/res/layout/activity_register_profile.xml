@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fillViewport="true"
+    tools:context="parentcrew.com.parentcrew.RegisterProfile">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Fill Your Profile"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="192dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="@+id/textView"
+            app:layout_constraintRight_toRightOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <EditText
+            android:id="@+id/locationEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/nameEditText"
+            app:layout_constraintRight_toRightOf="@+id/nameEditText"
+            app:layout_constraintTop_toBottomOf="@+id/nameEditText"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <EditText
+            android:id="@+id/lookingForEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/locationEditText"
+            app:layout_constraintRight_toRightOf="@+id/locationEditText"
+            app:layout_constraintTop_toBottomOf="@+id/locationEditText"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <EditText
+            android:id="@+id/interestEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/lookingForEditText"
+            app:layout_constraintRight_toRightOf="@+id/lookingForEditText"
+            app:layout_constraintTop_toBottomOf="@+id/lookingForEditText"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <CheckBox
+            android:id="@+id/kidsCheckBox"
+            android:layout_width="169dp"
+            android:layout_height="33dp"
+            android:text="Register Kids?"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="@+id/interestEditText"
+            app:layout_constraintTop_toBottomOf="@+id/interestEditText"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <EditText
+            android:id="@+id/kidNameEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/interestEditText"
+            app:layout_constraintRight_toRightOf="@+id/interestEditText"
+            app:layout_constraintTop_toBottomOf="@+id/interestEditText"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <EditText
+            android:id="@+id/kidAgeEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="29dp"
+            android:background="@drawable/edit_text_border"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@+id/kidNameEditText"
+            app:layout_constraintRight_toRightOf="@+id/kidNameEditText"
+            app:layout_constraintTop_toBottomOf="@+id/kidNameEditText"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            style="@style/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Name"
+            app:layout_constraintBottom_toTopOf="@+id/nameEditText"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            app:layout_constraintBottom_toTopOf="@+id/locationEditText"
+            app:layout_constraintLeft_toLeftOf="@+id/locationEditText"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Looking For"
+            app:layout_constraintLeft_toLeftOf="@+id/locationEditText"
+            app:layout_constraintTop_toBottomOf="@+id/locationEditText"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interest"
+            app:layout_constraintLeft_toLeftOf="@+id/lookingForEditText"
+            app:layout_constraintTop_toBottomOf="@+id/lookingForEditText"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <TextView
+            android:id="@+id/kidNameLabel"
+            style="@style/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kid Name"
+            app:layout_constraintBottom_toTopOf="@+id/kidNameEditText"
+            app:layout_constraintLeft_toLeftOf="@+id/kidNameEditText"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1" />
+
+        <TextView
+            android:id="@+id/kidAgeLabel"
+            style="@style/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="Kid Age"
+            app:layout_constraintBottom_toTopOf="@+id/kidAgeEditText"
+            app:layout_constraintLeft_toLeftOf="@+id/kidNameEditText"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1" />
+
+
+        <ImageView
+            android:id="@+id/profilePic"
+            android:layout_width="170dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="27dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="26dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/com_facebook_profile_picture_blank_square"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/submitButton"
+            android:layout_width="213dp"
+            android:layout_height="48dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kidAgeEditText"
+            fancy:fb_defaultColor="@color/white"
+            fancy:fb_radius="30dp"
+            fancy:fb_text="Next"
+            fancy:fb_textColor="@color/black"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

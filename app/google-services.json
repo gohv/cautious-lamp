@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "478556969541",
+    "firebase_url": "https://parentcrew-ada66.firebaseio.com",
+    "project_id": "parentcrew-ada66",
+    "storage_bucket": "parentcrew-ada66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:478556969541:android:48f5af4f5085155f",
+        "android_client_info": {
+          "package_name": "parentcrew.com.parentcrew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "478556969541-qskrrqplrgkg7a3feu9sdbuo5a3ve88d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "parentcrew.com.parentcrew",
+            "certificate_hash": "2f63c8dee749db3597c8656f71d9ceed0ed5de88"
+          }
+        },
+        {
+          "client_id": "478556969541-im2hhgs4ipghlitpedtun0feok8l6r6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxZ01yI0bxyEljwQwtlUho4pePxpq8sis"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "478556969541-im2hhgs4ipghlitpedtun0feok8l6r6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
