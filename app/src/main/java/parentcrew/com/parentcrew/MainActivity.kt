@@ -33,10 +33,12 @@ class MainActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.action_profile ->
                     Toast.makeText(this@MainActivity,"Profile",Toast.LENGTH_LONG).show()
+                //TODO: Display current user registered profile
                 R.id.action_people ->
                     loadList()
                 R.id.action_map ->
                     Toast.makeText(this@MainActivity,"Map",Toast.LENGTH_LONG).show()
+                //TODO: Display Map
             }
             true
         }
@@ -92,5 +94,9 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
+    }
+
+    override fun onBackPressed() {
+        //Disabled
     }
 }

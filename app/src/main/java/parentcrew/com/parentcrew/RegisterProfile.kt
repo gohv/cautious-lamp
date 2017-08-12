@@ -89,7 +89,9 @@ class RegisterProfile : AppCompatActivity() {
             val profilePicPath: Uri = Uri.parse(image)
             imageUploader.uploadPicture(profilePicPath, uid)
             //TODO: GET PICTURE URL AND STORE INTO DATABASE
-            //TODO: Clear input, dissplay a message for success and send to MainActivity
+            //TODO: User should not proceed if no Picture is uploaded
+
+
             val profileUpdate = UserProfileChangeRequest.Builder()
                     .setDisplayName(name)
                     .setPhotoUri(profilePicPath)
@@ -103,6 +105,13 @@ class RegisterProfile : AppCompatActivity() {
                             Toast.makeText(this@RegisterProfile, task.exception!!.message, Toast.LENGTH_LONG).show()
                         }
                     }
+            clearInput("",nameEditText)
+            clearInput("",locationEditText)
+            clearInput("",lookingForEditText)
+            clearInput("",interestEditText)
+            clearInput("",kidNameEditText)
+            clearInput("",kidAgeEditText)
+
         }
 
         profilePic.setOnClickListener {
@@ -147,5 +156,9 @@ class RegisterProfile : AppCompatActivity() {
     fun <T : View> Activity.bind(@IdRes res: Int): T {
         @Suppress("UNCHECKED_CAST")
         return findViewById(res) as T
+    }
+
+    private fun clearInput(c : String, e: EditText){
+        e.setText(c)
     }
 }
